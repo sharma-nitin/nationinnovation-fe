@@ -1,0 +1,102 @@
+body {
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F4F4;
+    color: #d8d9dd;
+    margin: auto 0;
+    background-image:
+linear-gradient(to left, rgba(211, 200, 200, 0), rgba(255, 255, 255, 1)),
+url('./../../assets/Profile/background1.jpg');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  header .brand h1 {  
+    font-size: 35px;
+    color: #008080;  
+
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+  header .brand h4 {  
+      color: rgb(1, 41, 71);  
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+  header .main-nav {
+    display: flex;
+  }
+  header .main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.75rem;
+  }
+  header .main-nav a:hover {
+    color: #ffffff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header .side-nav-open {
+      display: initial;
+    }
+  .brand{
+    height: 200px;
+  }
+    .main-nav{
+      margin-right:1000px;
+    }
+    /* header .main-nav {
+      display: none;
+    } */
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius:50px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+ 
+
+  

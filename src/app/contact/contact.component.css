@@ -1,0 +1,100 @@
+
+.header{
+    font-size: 4em;
+    text-align: center;
+    color: #008080;
+    padding: 30px;
+    margin-bottom: 0px;
+    background-color: #212121;
+
+}
+p{
+  overflow-wrap: break-word;
+  margin-top: 20px;
+}
+img{
+  width: 200px;
+  height: 169px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #101010;
+    background: #999;
+  }
+  .item-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px 25px;
+    width: 250px;
+    -webkit-perspective: 300px;
+    -moz-perspective: 300px;
+    -ms-perspective: 300px;
+    perspective: 300px;
+  }
+  .item-container:hover .item-table {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .item-table {
+    width: 200px;
+    height: 169px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+  }
+  .item-table .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .item-table .back {
+    display: block;
+    padding: 0.5em;
+    transform: rotateY(180deg);
+    -webkit-box-sizing: border-box;
+    -mox-box-sizing: border-box;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: black;
+    background-color: skyblue;
+  }
+  .item-front {
+    text-align: center;
+    border-radius: 15px;
+  }
+  .item-front ul {
+    list-style-type: none;
+  }
+  .item-front ul li {
+    display: block;
+    padding: 0.6em 3em;
+  }
+  .item-front ul li:nth-child(even) {
+    background: #ECECEC;
+  }
+  .item-front ul li:nth-child(odd) {
+    background: #FFFFFF;
+  }
+  .item-front ul li:nth-child(1) {
+    background: #262932;
+    color: #EF4A4A;
+    text-transform: uppercase;
+  }
+  .item-front ul li:nth-child(2) {
+    font-size: 0.8em;
+  }
+  

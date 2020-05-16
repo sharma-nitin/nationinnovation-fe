@@ -1,0 +1,8 @@
+{
+    "/api/*": {
+      "target": "https://nationinnovation-backend.firebaseapp.com",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }

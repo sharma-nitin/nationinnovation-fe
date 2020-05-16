@@ -1,0 +1,118 @@
+<nav class="menu" (scroll)="onWindowScroll($event);" id="navbar">
+  <ol>
+    <li class="menu-item"><a class="active" [routerLink]="['home']" [fragment]="'Home'">Home</a></li>
+    <li class="menu-item"> <a [routerLink]="['home']" [fragment]="'projects'">Projects</a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a (click)="changeRoute('android-projects')">Web Development</a></li>
+        <li class="menu-item"><a (click)="changeRoute('java-projects')">Java</a></li>
+        <li class="menu-item"><a (click)="changeRoute('php-projects')">PHP</a></li>
+        <li class="menu-item"><a (click)="changeRoute('python-projects')"> Python</a></li>
+        <li class="menu-item"><a (click)="changeRoute('iot-projects')">IOTprojects</a></li>
+        <li class="menu-item"><a (click)="changeRoute('image-projects')">Image Processing</a></li>
+        <li class="menu-item"><a (click)="changeRoute('embedded-projects')">Embedded system</a></li>
+        <li class="menu-item"><a (click)="changeRoute('raspberry-projects')">Raspberry Pi</a></li>
+      </ol>
+    </li>
+    <li class="menu-item"><a>Workshops</a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a (click)="changeRoute('java')">AI</a></li>
+        <li class="menu-item"><a (click)="changeRoute('py')">Python</a></li>
+        <li class="menu-item"><a (click)="changeRoute('iot')">IOT & Automation</a></li>
+        <li class="menu-item"><a (click)="changeRoute('ml')">Machine Learning</a></li>
+        <li class="menu-item"><a (click)="changeRoute('al')"> Cadence Virtuoso Tool</a></li>
+        <li class="menu-item"><a (click)="changeRoute('plc')">PLC Automation</a></li>
+        <li class="menu-item"><a (click)="changeRoute('avr')">AVR Training</a></li>
+        <li class="menu-item"><a (click)="changeRoute('vhdl')">VHDL & Verilog</a></li>
+        <li class="menu-item"><a (click)="changeRoute('tcad')">TCAD handson</a></li>
+
+      </ol>
+    </li>
+    <li class="menu-item"><a href="https://www.payumoney.com/store/buy/nation-innovation" target="_blank">e-Store</a>
+    </li>
+    <li class="menu-item"><a>Tutorials</a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a href="https://www.youtube.com/playlist?list=PL6R2tD4rOcKu1RSib3wyXhDrNqRh5Xd7T"
+            target="_blank">ARM LPC2148</a></li>
+        <li class="menu-item"><a href="https://www.youtube.com/playlist?list=PL6R2tD4rOcKuuXOEy2rkqbJLWgwSmuB-H"
+            target="_blank">Cyber Security</a></li>
+        <li class="menu-item"><a href="https://www.youtube.com/playlist?list=PL6R2tD4rOcKumZdhIkxSuJ5yCsVkp_7r0"
+            target="_blank">PCB Design, Fabrication and Testing</a></li>
+        <li class="menu-item"><a href="https://www.youtube.com/playlist?list=PL6R2tD4rOcKteSL_LIBt2fZoz-Na7faV8"
+            target="_blank">FSM : Finite State Machine | Mealy and Moore |</a></li>
+
+      </ol>
+    </li>
+    <li class="menu-item"><a href="https://wenationin.blogspot.com/" target="_blank">Blog</a></li>
+    <li class="menu-item"><a>About</a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a [routerLink]="['home']" [fragment]="'Aboutus'">Our Aim</a></li>
+        <li class="menu-item"><a [routerLink]="['home']" [fragment]="'Joinus'">Join Us</a></li>
+        <li class="menu-item"><a [routerLink]="['home']" [fragment]="'OurTeam'">Our Team</a></li>
+      </ol>
+    </li>
+    <li class="menu-item"><a [routerLink]="['home']" [fragment]="'ContactUs'">Contact Us</a></li>
+  </ol>
+</nav>
+
+<router-outlet></router-outlet>
+
+<div class="container background">
+
+  <div class="col-md-3 col-sm-6">
+    <div class="footer-heading">
+      <i class="fa fa-file icon-color"> Verified Projects</i>
+    </div>
+    <div class="footer-links">
+      We assure you that all the projects are in 100% running and working condition. Before purchasing the project, we
+      will show you the project by online remote system.
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <div class="footer-heading">
+      <i class="fa fa-shield icon-color"> Security</i>
+    </div>
+    <div class="footer-links">
+      This Web site is secured with a SSL Web Server Certificate. Transactions on the site are protected with up to
+      256-bit Secure Sockets Layer encryption </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+    <div class="footer-heading">
+      <i class="fa fa-comments-o icon-color"> User friendly</i>
+    </div>
+    <div class="footer-links">
+      The user can easily download any project without any guidance, from any corner of the world. </div>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <div class="footer-heading">
+      <i class="fa mr-2 fa-phone icon-color"> 24/7 Supporty</i>
+    </div>
+    <div class="footer-links">
+      Projects will be explained online face to face via Skype. Project will be executed in your system by using remote
+      support software’s (Anydesk or Teamviewer). </div>
+  </div>
+
+
+</div>
+<footer>
+
+  <div class="container">
+    <div class="col-sm-12 col-md-4"></div>
+    <div class="col-sm-12 col-md-4">
+      <nav class="main-nav">
+        <a href="https://m.facebook.com/official.nation.innovation" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/supportNationin" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/company/13427886" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/c/nationinnovation" target="_blank" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/nationin" class="fa fa-instagram"></a>
+      </nav>
+      <h1 class="footer-title">Nation Innovation.</h1>
+      <h3 style=color:#fff;font-size:1em;text-align:center;line-height:1em;>© 2019 Copyrights NationInnovation. All
+        rights reserved </h3>
+    </div>
+    <div class="col-sm-12 col-md-4"></div>
+
+
+  </div>
+
+</footer>

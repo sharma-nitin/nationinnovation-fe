@@ -1,0 +1,20 @@
+<app-header></app-header>
+<span class="top" *ngIf="isShow" (click)="gotoTop()"><i class="fa fa-arrow-circle-up" style="font-size:48px;color:red"></i></span>
+
+<button class="open-button" (click)="openForm()">
+  Queries? <i style="font-size: 30px;" class="fa fa-envelope" aria-hidden="true"></i>
+</button>
+
+<div class="chat-popup" id="myForm">
+  <form class="form-container">
+    <h1>Quick Contact</h1>
+
+    <input class="form-control" (input)="userName=$event.target.value" placeholder="Your name" type="text" tabindex="1" required autofocus><br>
+    <input class="form-control"  (input)="userEmail=$event.target.value" placeholder="Email ID" type="text" tabindex="1" required autofocus><br>
+    <input class="form-control"  (input)="userPhoneno=$event.target.value" placeholder="Phone number" type="text" tabindex="1" autofocus>
+    <textarea placeholder="Type message.." [(ngModel)]="userMessage" name="msg" required></textarea>
+
+    <button type="submit" class="btn" (click)="sendMail()">Send</button>
+    <button type="button" class="btn cancel" (click)="closeForm()">Close</button>
+  </form>
+</div>
